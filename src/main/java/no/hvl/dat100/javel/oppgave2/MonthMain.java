@@ -25,5 +25,38 @@ public class MonthMain {
          Remember to also to check that you get the expected results
          */
 
+
+        //MonthlyPower.print_PowerUsage(power_usage_month);
+        System.out.println();
+        //MonthlyPower.print_PowerPrices(power_prices_month);
+        System.out.println();
+        System.out.printf("%.2f kWh\n", MonthlyPower.computePowerUsage(power_usage_month));
+        System.out.println();
+        System.out.println(MonthlyPower.exceedThreshold(power_usage_month, 1000));
+        System.out.println();
+        System.out.printf("%.2f NOK\n", MonthlyPower.computeSpotPrice(power_usage_month, power_prices_month));
+        System.out.println();
+        System.out.printf("%.2f NOK\n", MonthlyPower.computePowerSupport(power_usage_month, power_prices_month));
+        System.out.println();
+        System.out.printf("%.2f NOK\n", MonthlyPower.computeNorgesPrice(power_usage_month));
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+
+
 }
